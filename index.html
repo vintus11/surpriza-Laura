@@ -22,12 +22,25 @@
     </div>
   </div>
 
-  <div class="gallery fade">
-    <h2>Amintiri 📸</h2>
-    <img src="images/poza1.jpg" width="250">
-    <img src="images/poza2.jpg" width="250">
-    <img src="images/poza3.jpg" width="250">
-  </div>
+ <div class="gallery">
+  <h2>Amintiri 📸</h2>
+  <img id="slider" src="images/poza1.jpg" class="pic">
+</div>
+
+<script>
+  const images = [
+    "images/poza1.jpg",
+    "images/poza2.jpg",
+    "images/poza3.jpg"
+  ];
+
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    document.getElementById("slider").src = images[index];
+  }, 2000);
+</script>
+
 
   <div class="letter">
     <h2>O scrisoare pentru tine 💌</h2>
