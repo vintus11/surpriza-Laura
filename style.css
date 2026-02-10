@@ -84,11 +84,6 @@ body {
   text-align: left;
 }
 
-/* FUNDAL GRADIENT */
-body {
-  background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ffe4e1);
-  overflow-x: hidden; /* ca inimioarele să nu dea scroll orizontal */
-}
 
 /* INIMIOARE */
 @keyframes float {
