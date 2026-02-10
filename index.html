@@ -18,6 +18,8 @@
     <p class="subtitlu">Vrei să fii Valentine-ul meu?</p>
 
     <button onclick="showAnswer(true)" class="btn">DA 💖</button>
+    <button id="noBtn" class="btn">NU 💔</button>
+
 
     <div id="raspuns" class="hidden">
       <h2>OMG 😍</h2>
@@ -48,8 +50,6 @@
       document.getElementById("raspuns").classList.remove("hidden");
     }
   </script>
-
-</body>
 <script>
   const muzica = document.getElementById("muzica");
   const playBtn = document.getElementById("playMusic");
@@ -62,6 +62,8 @@
     playBtn.style.display = "none";
   });
 </script>
+
+</body>
 
 
 </html>
