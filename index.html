@@ -50,21 +50,10 @@
       document.getElementById("raspuns").classList.remove("hidden");
     }
   </script>
-<script>
-  const muzica = document.getElementById("music.mp3");
-  const playBtn = document.getElementById("playMusic");
-
-  playBtn.addEventListener("click", () => {
-    muzica.play().catch(e => {
-      alert("Browserul a blocat muzica. Apasă din nou butonul PLAY.");
-    });
-    // Ascunde butonul după ce pornește
-    playBtn.style.display = "none";
-  });
-</script>
-
 </body>
-
+  <audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 
 </html>
 
