@@ -55,18 +55,18 @@
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
   });
-</script>
-  <script>
-setInterval(() => {
-  const heart = document.createElement("div");
-  heart.classList.add("heart");
-  heart.textContent = "❤️";
-  heart.style.left = Math.random() * 100 + "vw";
-  heart.style.fontSize = (15 + Math.random() * 20) + "px";
-  document.body.appendChild(heart);
-  setTimeout(() => heart.remove(), 4000);
-}, 300);
-</script>
+// Fundal inimioare
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.textContent = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (15 + Math.random()*20) + "px";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 4000);
+    }, 300);
+  </script>
+  
 </body>
 </html>
 
