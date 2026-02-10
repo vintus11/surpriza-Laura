@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Surpriza pentru Laura ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="titlu">Laura ❤️</h1>
+    <p class="subtitlu">Vrei să fii Valentine-ul meu?</p>
+
+    <button onclick="showAnswer(true)" class="btn">DA 💖</button>
+
+    <div id="raspuns" class="hidden">
+      <h2>OMG 😍</h2>
+      <p>M-ai făcut foarte fericit!</p>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <h2>Amintiri 📸</h2>
+    <img src="images/poza1.jpg" class="pic">
+    <img src="images/poza2.jpg" class="pic">
+    <img src="images/poza3.jpg" class="pic">
+  </div>
+
+  <div class="letter">
+    <h2>O scrisoare pentru tine 💌</h2>
+    <p>
+      Laura, fiecare zi cu tine e magia pe care n-am crezut că o voi trăi...
+      <br><br>
+      Cu drag,
+      <br>
+      [Nebunu Tau]
+    </p>
+  </div>
+
+  <script>
+    function showAnswer(ok) {
+      document.getElementById("raspuns").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
