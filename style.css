@@ -84,6 +84,12 @@ body {
   text-align: left;
 }
 
+/* FUNDAL GRADIENT */
+body {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ffe4e1);
+  overflow-x: hidden; /* ca inimioarele să nu dea scroll orizontal */
+}
+
 /* INIMIOARE */
 @keyframes float {
   0% { transform: translateY(100vh); opacity: 1; }
@@ -96,3 +102,4 @@ body {
   z-index: 9999;
   animation: float 4s linear forwards;
 }
+
